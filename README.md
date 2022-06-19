@@ -1,10 +1,10 @@
-##Spring boot for multi jdbc datasource:
+## Spring boot for multi jdbc datasource:
 This project is a spring-boot demo for using multi jdbc data source. 
 It can give a restful server for different mysql database.
 
 
 
-##Prepar database:
+## Prepar database:
 create two mysql databases :
 ```bash
 create database db_01;    
@@ -35,7 +35,7 @@ INSERT INTO db_02.user (id, username, address) VALUES (2, 'c#', 'https://docs.mi
 
 ```
 
-##API:
+## API:
 List: GET /api/{dbName}
 
 Insert: POST /api/{dbName}/user
@@ -45,7 +45,7 @@ Update: PUT /api/{dbName}/{table}/{id}
 Delete: DEL /api/{dbName}/{table}/{id}
 
 
-##Send restful request to operate database:
+## Send restful request to operate database:
 list user table:
 ```bash
 curl -H "Content-Type:application/json" -X GET --data  http://127.0.0.1:8001/api/one
