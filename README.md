@@ -45,7 +45,7 @@ Update: PUT /api/{dbName}/{table}/{id}
 Delete: DEL /api/{dbName}/{table}/{id}
 
 
-## Send restful request to operate database:
+## Send restful request to operate databases:
 list user table:
 ```bash
 curl -H "Content-Type:application/json" -X GET --data  http://127.0.0.1:8001/api/one
